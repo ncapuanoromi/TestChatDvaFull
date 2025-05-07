@@ -18,7 +18,7 @@
   embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
     // List the pre-chat field names with the value and whether
     // it's editable in the pre-chat form.
-    "Nome_Cognome": {
+    "Nome / Cognome": {
       "value": "Test JANE",
       "isEditableByEndUser": false
     }
