@@ -14,7 +14,13 @@
 				}
 			);
 
-   window.addEventListener("onEmbeddedMessagingReady", e => {
+   
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+
+ window.addEventListener("onEmbeddedMessagingReady", e => {
   embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
     // List the pre-chat field names with the value and whether
     // it's editable in the pre-chat form.
@@ -24,12 +30,6 @@
     }
   });
 });
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-
- 
 </script>
 <script type='text/javascript' src='https://dvaexpress--full.sandbox.my.site.com/ESWDVASalesforceMessagi1742377837018/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
